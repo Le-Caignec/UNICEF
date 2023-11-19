@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start:disaster-api": "cd disaster-api && npm run start",
-    "start:phoneNumber-api": "cd phoneNumber-api && npm run start",
-    "start:ui": "cd ui && npm run dev",
-    "start:chain": "cd proto-kit/packages/chain && pnpm run dev",
+    "start:disaster-api": "cd disaster-api && npm ci & npm run start",
+    "start:phoneNumber-api": "cd phoneNumber-api && npm ci && npm run start",
+    "start:ui": "cd ui && npm ci && npm run dev",
+    "start:chain": "cd proto-kit/packages/chain && pnpm install && pnpm run dev",
     "demo": "npm run start:ui & npm run start:disaster-api & npm run start:phoneNumber-api & npm run start:ui"
   },
   "dependencies": {
